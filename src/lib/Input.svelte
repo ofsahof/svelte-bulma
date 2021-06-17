@@ -8,6 +8,7 @@
   export let hovered = false;
   export let focused = false;
   export let classname = "";
+  export let disabled = false;
 
   $: inputType = () => {
     return `${style ? `is-${style}` : ""}`;
@@ -19,6 +20,7 @@
 </script>
 
 <input
+  {disabled}
   {type}
   {placeholder}
   class:is-rounded={rounded}
