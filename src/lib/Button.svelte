@@ -10,6 +10,7 @@
   export let text = "";
   export let light = false;
   export let fullwidth = false;
+  export let inverted = false;
 
   $: buttonType = () => {
     return `${type ? `is-${type}` : ""}`;
@@ -26,6 +27,7 @@
   class:is-outlined={outlined}
   class:is-light={light}
   class:is-fullwidth={fullwidth}
+  class:is-inverted={inverted}
   class={`
   button
   ${className}
