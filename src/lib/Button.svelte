@@ -22,7 +22,7 @@
   };
 </script>
 
-<button
+<button on:click
   {disabled}
   class:is-loading={loading}
   class:is-rounded={rounded}
