@@ -11,6 +11,7 @@
   export let light = false;
   export let fullwidth = false;
   export let inverted = false;
+  export let rounded = false;
 
   $: buttonType = () => {
     return `${type ? `is-${type}` : ""}`;
@@ -24,6 +25,7 @@
 <button
   {disabled}
   class:is-loading={loading}
+  class:is-rounded={rounded}
   class:is-outlined={outlined}
   class:is-light={light}
   class:is-fullwidth={fullwidth}
