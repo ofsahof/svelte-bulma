@@ -9,6 +9,7 @@
   export let disabled = false;
   export let text = "";
   export let light = false;
+  export let fullwidth = false;
 
   $: buttonType = () => {
     return `${type ? `is-${type}` : ""}`;
@@ -24,6 +25,7 @@
   class:is-loading={loading}
   class:is-outlined={outlined}
   class:is-light={light}
+  class:is-fullwidth={fullwidth}
   class={`
   button
   ${className}

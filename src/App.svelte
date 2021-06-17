@@ -11,7 +11,6 @@
   className="mt-5 ml-5"
   type="link"
   size="medium"
-  loading
-  disabled>
+  >
   click me
 </Button>
