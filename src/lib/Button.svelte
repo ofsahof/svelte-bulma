@@ -7,7 +7,8 @@
   export let outlined = false;
   export let loading = false;
   export let disabled = false;
-  export let text: string = "";
+  export let text = "";
+  export let light = false;
 
   $: buttonType = () => {
     return `${type ? `is-${type}` : ""}`;
@@ -22,6 +23,7 @@
   {disabled}
   class:is-loading={loading}
   class:is-outlined={outlined}
+  class:is-light={light}
   class={`
   button
   ${className}
