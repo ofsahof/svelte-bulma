@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { TAccent, TSize } from "../types/index";
 
-  export let className: string = "";
+  export let classname: string = "";
   export let type: TAccent = "";
   export let size: TSize = "";
   export let outlined = false;
@@ -32,7 +32,7 @@
   class:is-inverted={inverted}
   class={`
   button
-  ${className}
+  ${classname}
   ${buttonSize()}
   ${buttonType()}
   `}
