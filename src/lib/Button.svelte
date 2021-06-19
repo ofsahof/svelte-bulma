@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { TAccent, TSize } from "../types/index";
 
-  export let classname: string = "";
+  export let classname = "";
   export let type: TAccent = "";
   export let size: TSize = "";
   export let outlined = false;
